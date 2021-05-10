@@ -1,0 +1,29 @@
+<div class="container">
+  <div
+    class="flex col-span-2"
+    style="margin-left: 457px;
+  "
+  >
+    <div class="card text-white bg-secondary mb-3 ml-3 mt-3 flex-none w-1/2">
+      <div class="card-header">New Posts</div>
+      <div class="card-body">
+        <textarea
+          [(ngModel)]="registerData.description"
+          matInput
+          placeholder="Description"
+          style="color: black; width: 483px;"
+        >
+        </textarea>
+      </div>
+      <div class="flex flex-row-reverse ">
+        <button
+          (click)="post()"
+          type="submit"
+          class="btn btn-danger text-right place-items-end"
+        >
+          Send
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

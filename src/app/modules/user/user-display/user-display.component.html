@@ -1,0 +1,14 @@
+<div *ngIf="_apiServices.users" class="flex grid grid-cols-4">
+  <div class="flex-wrap col-span-2 flex">
+    <div class="card text-white bg-primary mb-3 ml-3 mt-3 flex-none" style="max-width: 20rem; "
+      *ngFor="let user of _apiServices.users">
+      <mat-card [routerLink]="['/navigation/profile' , user._id]">
+        <div class="card-header">Header</div>
+        <div class="card-body">
+          <h4 class="card-title">Primary card title</h4>
+          <p class="card-text">{{user.email}}</p>
+        </div>
+      </mat-card>
+    </div>
+  </div>
+</div>

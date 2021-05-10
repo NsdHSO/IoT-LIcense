@@ -1,0 +1,11 @@
+<mat-card
+  class="bg-white flex"
+  style="margin-left: 25%; width: 50%"
+  *ngIf="dataSource"
+>
+  <div class="container mb-1" *ngFor="let a of dataSource">
+    <mat-card>
+      {{ a.msg }}
+    </mat-card>
+  </div>
+</mat-card>

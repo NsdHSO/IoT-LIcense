@@ -1,0 +1,28 @@
+<div class="container card mt-4 example-form-field  ">
+  <div class="card-header bg-white">Register New User</div>
+  <div class="card-body">
+    <form>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input [(ngModel)]="registerData.email" name="email" class="form-control" placeholder="Email">
+      </div>
+      <div class="form-group">
+        <label for="pwd">Password</label>
+        <input type="password" [(ngModel)]="registerData.pws" name="pwd" class="form-control" placeholder="Password">
+      </div>
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input [(ngModel)]="registerData.name" name="name" class="form-control" placeholder="Name">
+      </div>
+      <div class="form-group">
+        <label for="description">Description</label>
+        <textarea type="text" [(ngModel)]="registerData.description" name="description" class="form-control"
+          placeholder="Descriprion">
+        </textarea>
+      </div>
+      <div class="flex flex-row-reverse ">
+        <button (click)="post()" type="submit" class="btn btn-primary text-right place-items-end">Register</button>
+      </div>
+    </form>
+  </div>
+</div>

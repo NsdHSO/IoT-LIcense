@@ -1,0 +1,16 @@
+<div class="flex w-full" *ngIf="user">
+  <div
+    class="card text-white bg-secondary mb-3 ml-3 mt-3 flex-none"
+    style="max-width: 20rem;"
+  >
+    <div class="card-header">Profile</div>
+    <div class="card-body">
+      <h4 class="card-title">User name: {{user.name}}</h4>
+      <h4 class="card-title">User email: {{user.email}}</h4>
+
+      <p class="card-text">{{user.description}}</p>
+    </div>
+  </div>
+</div>
+
+<app-messages></app-messages>

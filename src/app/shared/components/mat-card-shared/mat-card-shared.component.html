@@ -1,0 +1,50 @@
+<mat-card class="example-card">
+  <header>
+    <span> Title </span>
+  </header>
+  <mat-card-header id="ion">
+    <mat-card-title>
+      <div>
+        <span>Last start</span>
+        <span>Last stop</span>
+        <span>Humidity</span>
+        <span class="text-blue-500">Running</span>
+      </div>
+      <div class="ml-2">
+        <span>Inner5</span>
+        <span>Inner6</span>
+        <span>Inner7</span>
+        <span class="text-blue-500">Inner 8</span>
+      </div>
+      <footer>
+        <div>
+          <span>
+            Sami is the BEST
+          </span>
+        </div>
+      </footer>
+    </mat-card-title>
+    <div id="divChart" mat-card-avatar class="example-header-image">
+      <img
+        src="https://st1.echipot.ro/images/Delta-T/Soil-science/PR2/PR2-in-sol.jpg"
+        alt=""
+      />
+    </div>
+  </mat-card-header>
+  <mat-card-content class="mb-0">
+    <shared-graph></shared-graph>
+  </mat-card-content>
+  <mat-card-actions class="mb-0 p-0">
+    <div id="history">
+      <button mat-button>
+        History
+      </button>
+    </div>
+    <div id="summary">
+      <button mat-button>
+        Summary
+      </button>
+    </div>
+  </mat-card-actions>
+  <mat-card-actions> </mat-card-actions>
+</mat-card>

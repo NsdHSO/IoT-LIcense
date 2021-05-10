@@ -1,0 +1,39 @@
+<div class="container card mt-4 example-form-field  ">
+  <div class="card-header bg-white">
+    <span class="text-8xl ml-16" style="margin-left: 92px">Login</span>
+  </div>
+  <div class="card-body">
+    <form>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input
+          [(ngModel)]="loginData.email"
+          name="email"
+          class="form-control"
+          placeholder="Email"
+        />
+      </div>
+      <div class="form-group">
+        <label for="pwd">Password</label>
+        <input
+          type="password"
+          [(ngModel)]="loginData.pws"
+          name="pwd"
+          class="form-control"
+          placeholder="Password"
+        />
+      </div>
+      <div class="flex flex-row-reverse ">
+        <button
+          (click)="post()"
+          type="submit"
+          mat-button
+          class="btn btn-primary text-right place-items-end"
+          routerLink="users"
+        >
+          Login
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
