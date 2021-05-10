@@ -1,35 +1,20 @@
-import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import appRoutes from './app.routing';
+import { NgModule } from '@angular/core';
+
+import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { Navigation } from './modules/navigation.module';
-import {
-  AuthInterceptorService,
-  AuthServicesService,
-} from './shared/utils/services/.services';
-import { RouterModule } from '@angular/router';
-import { FormsModule } from '@angular/forms';
-import { HTTP_INTERCEPTORS } from '@angular/common/http';
-import { DashboardModule } from './modules/dashboard/dashboard.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [
+    AppComponent
+  ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(appRoutes),
-    Navigation,
-    FormsModule,
-    DashboardModule,
-
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
-  providers: [
-    AuthServicesService,
-    {
-      provide: HTTP_INTERCEPTORS,
-      useClass: AuthInterceptorService,
-      multi: true,
-    },
-  ],
-  bootstrap: [AppComponent],
+  providers: [],
+  bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule { }
